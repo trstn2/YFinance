@@ -1,3 +1,7 @@
+# Tristan
+# December 11th 2024
+# Yahoo Finance Stock and ETF tracker and analyser.
+
 def stock_func():
     import yfinance as yf
     method_choice = input("Enter your choice (e.g., info, actions): ").strip().lower()
