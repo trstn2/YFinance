@@ -2,6 +2,7 @@
 # December 11th 2024
 # Yahoo Finance Stock and ETF tracker and analyser.
 
+# Main function
 def stock_func():
     import yfinance as yf
     method_choice = input("Enter your choice (e.g., info, actions): ").strip().lower()
@@ -504,7 +505,7 @@ def stock_func():
                 print(f"Stock symbol {ticker} not found.")
 
 
-
+    # User input
     if method_choice == "actions":
         actions()
     elif method_choice == "analyst_price_targets":
@@ -606,6 +607,7 @@ def stock_func():
     else:
         print("Invalid input, please try again.")
 
+# Index Fund function
 def index_funds():
     import yfinance as yf
     method_choice = input("Enter your Index Fund ticker symbol here: ").strip()
@@ -644,4 +646,5 @@ def index_funds():
     elif if_input.lower() == "history":
         history()
 
+# Call the function to run
 stock_func()
