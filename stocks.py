@@ -646,5 +646,5 @@ def index_funds():
     elif if_input.lower() == "history":
         history()
 
-# Call the function to run
+# Call the function to run.
 stock_func()
